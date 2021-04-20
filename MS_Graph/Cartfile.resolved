@@ -1,0 +1,3 @@
+github "AzureAD/microsoft-authentication-library-for-objc" "53221d4470b95ecfef92fedb3fd9b105d0c12796"
+github "iivanu/msgraph-sdk-objc-models" "94902edf5e3e164609e3772c18b018214c41ba70"
+github "microsoftgraph/msgraph-sdk-objc" "da7223e3c455fe558de361c611df36c6dcc4229d"

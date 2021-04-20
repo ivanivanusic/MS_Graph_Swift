@@ -1,0 +1,3 @@
+github "iivanu/msgraph-sdk-objc-models" "dev"
+github "AzureAD/microsoft-authentication-library-for-objc" "master"
+github "microsoftgraph/msgraph-sdk-objc" "master"

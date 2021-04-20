@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>AppId</key>
+	<string>5ac9bd5c-4369-4f7d-a3a9-dd49db8370e2</string>
+	<key>GraphScopes</key>
+	<array>
+		<string>User.Read</string>
+		<string>MailboxSettings.Read</string>
+		<string>Calendars.ReadWrite</string>
+	</array>
+</dict>
+</plist>

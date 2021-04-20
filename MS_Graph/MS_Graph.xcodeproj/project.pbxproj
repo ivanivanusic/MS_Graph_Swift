@@ -1,0 +1,737 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		993A4988262EAC81006CDCBE /* GraphToIana.swift in Sources */ = {isa = PBXBuildFile; fileRef = 993A4987262EAC81006CDCBE /* GraphToIana.swift */; };
+		993A498D262EAD31006CDCBE /* CalendarTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 993A498C262EAD31006CDCBE /* CalendarTableViewController.swift */; };
+		993A49A2262EADB6006CDCBE /* CalendarTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 993A49A1262EADB6006CDCBE /* CalendarTableViewCell.swift */; };
+		993A49AA262EBCE0006CDCBE /* NewEventViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 993A49A9262EBCE0006CDCBE /* NewEventViewController.swift */; };
+		9945045B2629C6DB0068FE63 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9945045A2629C6DB0068FE63 /* AppDelegate.swift */; };
+		9945045D2629C6DB0068FE63 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9945045C2629C6DB0068FE63 /* SceneDelegate.swift */; };
+		9945045F2629C6DB0068FE63 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9945045E2629C6DB0068FE63 /* SignInViewController.swift */; };
+		994504622629C6DB0068FE63 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 994504602629C6DB0068FE63 /* Main.storyboard */; };
+		994504642629C6DC0068FE63 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 994504632629C6DC0068FE63 /* Assets.xcassets */; };
+		994504672629C6DC0068FE63 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 994504652629C6DC0068FE63 /* LaunchScreen.storyboard */; };
+		994504722629C6DC0068FE63 /* MS_GraphTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 994504712629C6DC0068FE63 /* MS_GraphTests.swift */; };
+		9945047D2629C6DD0068FE63 /* MS_GraphUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9945047C2629C6DD0068FE63 /* MS_GraphUITests.swift */; };
+		9970FA64262D5D7500F5AA16 /* MSGraphClientSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9970FA63262D5D7500F5AA16 /* MSGraphClientSDK.framework */; };
+		9970FA69262D5E5F00F5AA16 /* MSAL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9970FA68262D5E5F00F5AA16 /* MSAL.framework */; };
+		9970FA6C262D5E6400F5AA16 /* MSGraphClientModels.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9970FA6B262D5E6400F5AA16 /* MSGraphClientModels.framework */; };
+		9970FA7A262D62F200F5AA16 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9970FA79262D62F200F5AA16 /* WelcomeViewController.swift */; };
+		9970FA7F262D669500F5AA16 /* CalendarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9970FA7E262D669500F5AA16 /* CalendarViewController.swift */; };
+		9970FA84262D68E900F5AA16 /* SpinnerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9970FA83262D68E900F5AA16 /* SpinnerViewController.swift */; };
+		9970FA8C262D6B0900F5AA16 /* AuthSettings.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9970FA8B262D6B0900F5AA16 /* AuthSettings.plist */; };
+		9970FA9B262D6CBA00F5AA16 /* AuthenticationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9970FA9A262D6CBA00F5AA16 /* AuthenticationManager.swift */; };
+		9970FAA0262D6D4A00F5AA16 /* GraphManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9970FA9F262D6D4A00F5AA16 /* GraphManager.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		9945046E2629C6DC0068FE63 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9945044F2629C6DB0068FE63 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 994504562629C6DB0068FE63;
+			remoteInfo = MS_Graph;
+		};
+		994504792629C6DD0068FE63 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9945044F2629C6DB0068FE63 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 994504562629C6DB0068FE63;
+			remoteInfo = MS_Graph;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		993A4987262EAC81006CDCBE /* GraphToIana.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraphToIana.swift; sourceTree = "<group>"; };
+		993A498C262EAD31006CDCBE /* CalendarTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarTableViewController.swift; sourceTree = "<group>"; };
+		993A49A1262EADB6006CDCBE /* CalendarTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarTableViewCell.swift; sourceTree = "<group>"; };
+		993A49A9262EBCE0006CDCBE /* NewEventViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewEventViewController.swift; sourceTree = "<group>"; };
+		994504572629C6DB0068FE63 /* MS_Graph.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MS_Graph.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9945045A2629C6DB0068FE63 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		9945045C2629C6DB0068FE63 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		9945045E2629C6DB0068FE63 /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
+		994504612629C6DB0068FE63 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		994504632629C6DC0068FE63 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		994504662629C6DC0068FE63 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		994504682629C6DC0068FE63 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9945046D2629C6DC0068FE63 /* MS_GraphTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MS_GraphTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		994504712629C6DC0068FE63 /* MS_GraphTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MS_GraphTests.swift; sourceTree = "<group>"; };
+		994504732629C6DC0068FE63 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		994504782629C6DD0068FE63 /* MS_GraphUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MS_GraphUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9945047C2629C6DD0068FE63 /* MS_GraphUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MS_GraphUITests.swift; sourceTree = "<group>"; };
+		9945047E2629C6DD0068FE63 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9970FA63262D5D7500F5AA16 /* MSGraphClientSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MSGraphClientSDK.framework; path = Carthage/Build/iOS/MSGraphClientSDK.framework; sourceTree = "<group>"; };
+		9970FA68262D5E5F00F5AA16 /* MSAL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MSAL.framework; path = Carthage/Build/iOS/MSAL.framework; sourceTree = "<group>"; };
+		9970FA6B262D5E6400F5AA16 /* MSGraphClientModels.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MSGraphClientModels.framework; path = Carthage/Build/iOS/MSGraphClientModels.framework; sourceTree = "<group>"; };
+		9970FA79262D62F200F5AA16 /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
+		9970FA7E262D669500F5AA16 /* CalendarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarViewController.swift; sourceTree = "<group>"; };
+		9970FA83262D68E900F5AA16 /* SpinnerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpinnerViewController.swift; sourceTree = "<group>"; };
+		9970FA8B262D6B0900F5AA16 /* AuthSettings.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = AuthSettings.plist; sourceTree = "<group>"; };
+		9970FA93262D6C0300F5AA16 /* MS_Graph.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MS_Graph.entitlements; sourceTree = "<group>"; };
+		9970FA9A262D6CBA00F5AA16 /* AuthenticationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationManager.swift; sourceTree = "<group>"; };
+		9970FA9F262D6D4A00F5AA16 /* GraphManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraphManager.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		994504542629C6DB0068FE63 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9970FA64262D5D7500F5AA16 /* MSGraphClientSDK.framework in Frameworks */,
+				9970FA6C262D5E6400F5AA16 /* MSGraphClientModels.framework in Frameworks */,
+				9970FA69262D5E5F00F5AA16 /* MSAL.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9945046A2629C6DC0068FE63 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		994504752629C6DD0068FE63 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		993A49AE262EC5B6006CDCBE /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				9970FA9A262D6CBA00F5AA16 /* AuthenticationManager.swift */,
+				9970FA9F262D6D4A00F5AA16 /* GraphManager.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		993A49B2262EC60C006CDCBE /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				9970FA7E262D669500F5AA16 /* CalendarViewController.swift */,
+				9945045E2629C6DB0068FE63 /* SignInViewController.swift */,
+				9970FA79262D62F200F5AA16 /* WelcomeViewController.swift */,
+				993A498C262EAD31006CDCBE /* CalendarTableViewController.swift */,
+				993A49A9262EBCE0006CDCBE /* NewEventViewController.swift */,
+				9970FA83262D68E900F5AA16 /* SpinnerViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		993A49B6262EC62D006CDCBE /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				994504602629C6DB0068FE63 /* Main.storyboard */,
+				994504652629C6DC0068FE63 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		993A49B7262EC652006CDCBE /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				993A49A1262EADB6006CDCBE /* CalendarTableViewCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		993A49BB262EC671006CDCBE /* Supporting files */ = {
+			isa = PBXGroup;
+			children = (
+				993A4987262EAC81006CDCBE /* GraphToIana.swift */,
+			);
+			path = "Supporting files";
+			sourceTree = "<group>";
+		};
+		9945044E2629C6DB0068FE63 = {
+			isa = PBXGroup;
+			children = (
+				994504592629C6DB0068FE63 /* MS_Graph */,
+				994504702629C6DC0068FE63 /* MS_GraphTests */,
+				9945047B2629C6DD0068FE63 /* MS_GraphUITests */,
+				994504582629C6DB0068FE63 /* Products */,
+				9970FA62262D5D7500F5AA16 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		994504582629C6DB0068FE63 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				994504572629C6DB0068FE63 /* MS_Graph.app */,
+				9945046D2629C6DC0068FE63 /* MS_GraphTests.xctest */,
+				994504782629C6DD0068FE63 /* MS_GraphUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		994504592629C6DB0068FE63 /* MS_Graph */ = {
+			isa = PBXGroup;
+			children = (
+				9970FA93262D6C0300F5AA16 /* MS_Graph.entitlements */,
+				9945045A2629C6DB0068FE63 /* AppDelegate.swift */,
+				9945045C2629C6DB0068FE63 /* SceneDelegate.swift */,
+				993A49AE262EC5B6006CDCBE /* Managers */,
+				993A49B2262EC60C006CDCBE /* Controllers */,
+				993A49B6262EC62D006CDCBE /* Storyboards */,
+				993A49B7262EC652006CDCBE /* Cells */,
+				993A49BB262EC671006CDCBE /* Supporting files */,
+				994504632629C6DC0068FE63 /* Assets.xcassets */,
+				994504682629C6DC0068FE63 /* Info.plist */,
+				9970FA8B262D6B0900F5AA16 /* AuthSettings.plist */,
+			);
+			path = MS_Graph;
+			sourceTree = "<group>";
+		};
+		994504702629C6DC0068FE63 /* MS_GraphTests */ = {
+			isa = PBXGroup;
+			children = (
+				994504712629C6DC0068FE63 /* MS_GraphTests.swift */,
+				994504732629C6DC0068FE63 /* Info.plist */,
+			);
+			path = MS_GraphTests;
+			sourceTree = "<group>";
+		};
+		9945047B2629C6DD0068FE63 /* MS_GraphUITests */ = {
+			isa = PBXGroup;
+			children = (
+				9945047C2629C6DD0068FE63 /* MS_GraphUITests.swift */,
+				9945047E2629C6DD0068FE63 /* Info.plist */,
+			);
+			path = MS_GraphUITests;
+			sourceTree = "<group>";
+		};
+		9970FA62262D5D7500F5AA16 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9970FA6B262D5E6400F5AA16 /* MSGraphClientModels.framework */,
+				9970FA68262D5E5F00F5AA16 /* MSAL.framework */,
+				9970FA63262D5D7500F5AA16 /* MSGraphClientSDK.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		994504562629C6DB0068FE63 /* MS_Graph */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 994504812629C6DD0068FE63 /* Build configuration list for PBXNativeTarget "MS_Graph" */;
+			buildPhases = (
+				994504532629C6DB0068FE63 /* Sources */,
+				994504542629C6DB0068FE63 /* Frameworks */,
+				994504552629C6DB0068FE63 /* Resources */,
+				9970FA67262D5DF400F5AA16 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MS_Graph;
+			productName = MS_Graph;
+			productReference = 994504572629C6DB0068FE63 /* MS_Graph.app */;
+			productType = "com.apple.product-type.application";
+		};
+		9945046C2629C6DC0068FE63 /* MS_GraphTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 994504842629C6DD0068FE63 /* Build configuration list for PBXNativeTarget "MS_GraphTests" */;
+			buildPhases = (
+				994504692629C6DC0068FE63 /* Sources */,
+				9945046A2629C6DC0068FE63 /* Frameworks */,
+				9945046B2629C6DC0068FE63 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9945046F2629C6DC0068FE63 /* PBXTargetDependency */,
+			);
+			name = MS_GraphTests;
+			productName = MS_GraphTests;
+			productReference = 9945046D2629C6DC0068FE63 /* MS_GraphTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		994504772629C6DD0068FE63 /* MS_GraphUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 994504872629C6DD0068FE63 /* Build configuration list for PBXNativeTarget "MS_GraphUITests" */;
+			buildPhases = (
+				994504742629C6DD0068FE63 /* Sources */,
+				994504752629C6DD0068FE63 /* Frameworks */,
+				994504762629C6DD0068FE63 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9945047A2629C6DD0068FE63 /* PBXTargetDependency */,
+			);
+			name = MS_GraphUITests;
+			productName = MS_GraphUITests;
+			productReference = 994504782629C6DD0068FE63 /* MS_GraphUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9945044F2629C6DB0068FE63 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1240;
+				LastUpgradeCheck = 1240;
+				TargetAttributes = {
+					994504562629C6DB0068FE63 = {
+						CreatedOnToolsVersion = 12.4;
+					};
+					9945046C2629C6DC0068FE63 = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = 994504562629C6DB0068FE63;
+					};
+					994504772629C6DD0068FE63 = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = 994504562629C6DB0068FE63;
+					};
+				};
+			};
+			buildConfigurationList = 994504522629C6DB0068FE63 /* Build configuration list for PBXProject "MS_Graph" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 9945044E2629C6DB0068FE63;
+			productRefGroup = 994504582629C6DB0068FE63 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				994504562629C6DB0068FE63 /* MS_Graph */,
+				9945046C2629C6DC0068FE63 /* MS_GraphTests */,
+				994504772629C6DD0068FE63 /* MS_GraphUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		994504552629C6DB0068FE63 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				994504672629C6DC0068FE63 /* LaunchScreen.storyboard in Resources */,
+				994504642629C6DC0068FE63 /* Assets.xcassets in Resources */,
+				994504622629C6DB0068FE63 /* Main.storyboard in Resources */,
+				9970FA8C262D6B0900F5AA16 /* AuthSettings.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9945046B2629C6DC0068FE63 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		994504762629C6DD0068FE63 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		9970FA67262D5DF400F5AA16 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/MSGraphClientSDK.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/MSGraphClientModels.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/MSAL.framework",
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/$(FRAMEWORKS_FOLDER_PATH)/MSAL.framework",
+				"$(DERIVED_FILE_DIR)/$(FRAMEWORKS_FOLDER_PATH)/MSGraphClientModels.framework",
+				"$(DERIVED_FILE_DIR)/$(FRAMEWORKS_FOLDER_PATH)/MSGraphClientSDK.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		994504532629C6DB0068FE63 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9970FA7F262D669500F5AA16 /* CalendarViewController.swift in Sources */,
+				993A498D262EAD31006CDCBE /* CalendarTableViewController.swift in Sources */,
+				9945045F2629C6DB0068FE63 /* SignInViewController.swift in Sources */,
+				993A4988262EAC81006CDCBE /* GraphToIana.swift in Sources */,
+				9970FAA0262D6D4A00F5AA16 /* GraphManager.swift in Sources */,
+				9970FA9B262D6CBA00F5AA16 /* AuthenticationManager.swift in Sources */,
+				9970FA7A262D62F200F5AA16 /* WelcomeViewController.swift in Sources */,
+				9945045B2629C6DB0068FE63 /* AppDelegate.swift in Sources */,
+				993A49A2262EADB6006CDCBE /* CalendarTableViewCell.swift in Sources */,
+				9970FA84262D68E900F5AA16 /* SpinnerViewController.swift in Sources */,
+				993A49AA262EBCE0006CDCBE /* NewEventViewController.swift in Sources */,
+				9945045D2629C6DB0068FE63 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		994504692629C6DC0068FE63 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				994504722629C6DC0068FE63 /* MS_GraphTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		994504742629C6DD0068FE63 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9945047D2629C6DD0068FE63 /* MS_GraphUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		9945046F2629C6DC0068FE63 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 994504562629C6DB0068FE63 /* MS_Graph */;
+			targetProxy = 9945046E2629C6DC0068FE63 /* PBXContainerItemProxy */;
+		};
+		9945047A2629C6DD0068FE63 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 994504562629C6DB0068FE63 /* MS_Graph */;
+			targetProxy = 994504792629C6DD0068FE63 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		994504602629C6DB0068FE63 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				994504612629C6DB0068FE63 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		994504652629C6DC0068FE63 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				994504662629C6DC0068FE63 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		9945047F2629C6DD0068FE63 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		994504802629C6DD0068FE63 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		994504822629C6DD0068FE63 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = MS_Graph/MS_Graph.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7B27WN32VN;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = MS_Graph/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.iivanu.MS-Graph";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		994504832629C6DD0068FE63 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = MS_Graph/MS_Graph.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7B27WN32VN;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = MS_Graph/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.iivanu.MS-Graph";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		994504852629C6DD0068FE63 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7B27WN32VN;
+				INFOPLIST_FILE = MS_GraphTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.iivanu.MS-GraphTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MS_Graph.app/MS_Graph";
+			};
+			name = Debug;
+		};
+		994504862629C6DD0068FE63 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7B27WN32VN;
+				INFOPLIST_FILE = MS_GraphTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.iivanu.MS-GraphTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MS_Graph.app/MS_Graph";
+			};
+			name = Release;
+		};
+		994504882629C6DD0068FE63 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7B27WN32VN;
+				INFOPLIST_FILE = MS_GraphUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.iivanu.MS-GraphUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = MS_Graph;
+			};
+			name = Debug;
+		};
+		994504892629C6DD0068FE63 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7B27WN32VN;
+				INFOPLIST_FILE = MS_GraphUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.iivanu.MS-GraphUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = MS_Graph;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		994504522629C6DB0068FE63 /* Build configuration list for PBXProject "MS_Graph" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9945047F2629C6DD0068FE63 /* Debug */,
+				994504802629C6DD0068FE63 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		994504812629C6DD0068FE63 /* Build configuration list for PBXNativeTarget "MS_Graph" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				994504822629C6DD0068FE63 /* Debug */,
+				994504832629C6DD0068FE63 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		994504842629C6DD0068FE63 /* Build configuration list for PBXNativeTarget "MS_GraphTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				994504852629C6DD0068FE63 /* Debug */,
+				994504862629C6DD0068FE63 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		994504872629C6DD0068FE63 /* Build configuration list for PBXNativeTarget "MS_GraphUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				994504882629C6DD0068FE63 /* Debug */,
+				994504892629C6DD0068FE63 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9945044F2629C6DB0068FE63 /* Project object */;
+}
