@@ -45,6 +45,10 @@ class CalendarTableViewController: UITableViewController {
 
         return cell
     }
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: true)
+    }
 
     private func formatGraphDateTime(dateTime: MSGraphDateTimeTimeZone?) -> String {
         guard let graphDateTime = dateTime else {

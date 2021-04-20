@@ -11,6 +11,8 @@
 		993A498D262EAD31006CDCBE /* CalendarTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 993A498C262EAD31006CDCBE /* CalendarTableViewController.swift */; };
 		993A49A2262EADB6006CDCBE /* CalendarTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 993A49A1262EADB6006CDCBE /* CalendarTableViewCell.swift */; };
 		993A49AA262EBCE0006CDCBE /* NewEventViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 993A49A9262EBCE0006CDCBE /* NewEventViewController.swift */; };
+		993A49C7262EF71C006CDCBE /* MailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 993A49C6262EF71C006CDCBE /* MailsViewController.swift */; };
+		993A49CF262EF9AE006CDCBE /* MailsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 993A49CE262EF9AE006CDCBE /* MailsTableViewController.swift */; };
 		9945045B2629C6DB0068FE63 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9945045A2629C6DB0068FE63 /* AppDelegate.swift */; };
 		9945045D2629C6DB0068FE63 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9945045C2629C6DB0068FE63 /* SceneDelegate.swift */; };
 		9945045F2629C6DB0068FE63 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9945045E2629C6DB0068FE63 /* SignInViewController.swift */; };
@@ -52,6 +54,8 @@
 		993A498C262EAD31006CDCBE /* CalendarTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarTableViewController.swift; sourceTree = "<group>"; };
 		993A49A1262EADB6006CDCBE /* CalendarTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarTableViewCell.swift; sourceTree = "<group>"; };
 		993A49A9262EBCE0006CDCBE /* NewEventViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewEventViewController.swift; sourceTree = "<group>"; };
+		993A49C6262EF71C006CDCBE /* MailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MailsViewController.swift; sourceTree = "<group>"; };
+		993A49CE262EF9AE006CDCBE /* MailsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MailsTableViewController.swift; sourceTree = "<group>"; };
 		994504572629C6DB0068FE63 /* MS_Graph.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MS_Graph.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9945045A2629C6DB0068FE63 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9945045C2629C6DB0068FE63 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -119,9 +123,11 @@
 			isa = PBXGroup;
 			children = (
 				9970FA7E262D669500F5AA16 /* CalendarViewController.swift */,
+				993A498C262EAD31006CDCBE /* CalendarTableViewController.swift */,
+				993A49C6262EF71C006CDCBE /* MailsViewController.swift */,
+				993A49CE262EF9AE006CDCBE /* MailsTableViewController.swift */,
 				9945045E2629C6DB0068FE63 /* SignInViewController.swift */,
 				9970FA79262D62F200F5AA16 /* WelcomeViewController.swift */,
-				993A498C262EAD31006CDCBE /* CalendarTableViewController.swift */,
 				993A49A9262EBCE0006CDCBE /* NewEventViewController.swift */,
 				9970FA83262D68E900F5AA16 /* SpinnerViewController.swift */,
 			);
@@ -388,7 +394,9 @@
 				9945045B2629C6DB0068FE63 /* AppDelegate.swift in Sources */,
 				993A49A2262EADB6006CDCBE /* CalendarTableViewCell.swift in Sources */,
 				9970FA84262D68E900F5AA16 /* SpinnerViewController.swift in Sources */,
+				993A49CF262EF9AE006CDCBE /* MailsTableViewController.swift in Sources */,
 				993A49AA262EBCE0006CDCBE /* NewEventViewController.swift in Sources */,
+				993A49C7262EF71C006CDCBE /* MailsViewController.swift in Sources */,
 				9945045D2629C6DB0068FE63 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

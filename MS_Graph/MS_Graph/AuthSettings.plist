@@ -9,6 +9,7 @@
 		<string>User.Read</string>
 		<string>MailboxSettings.Read</string>
 		<string>Calendars.ReadWrite</string>
+		<string>Mail.ReadWrite</string>
 	</array>
 </dict>
 </plist>

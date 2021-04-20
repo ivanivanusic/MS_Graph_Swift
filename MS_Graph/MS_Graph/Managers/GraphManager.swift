@@ -102,6 +102,48 @@ class GraphManager {
         eventsDataTask?.execute()
     }
     
+    public func getFlaggedMails(viewStart: String,
+                                viewEnd: String,
+                                completion: @escaping([MSGraphMessage]?, Error?) -> Void) {
+        let mailsRequest = NSMutableURLRequest(url: URL(string: "\(MSGraphBaseURL)/me/mailFolders/Inbox/messages?$filter=isRead+eq+false+and+flag/flagStatus+eq+'flagged'")!)
+        mailsRequest.addValue("outlook.timezone=\"\(self.userTimeZone)\"", forHTTPHeaderField: "Prefer")
+        
+        
+        let mailsDataTask = MSURLSessionDataTask(request: mailsRequest, client: self.client, completion: {
+            (data: Data?, response: URLResponse?, graphError: Error?) in
+            guard let mailsData = data, graphError == nil else {
+                completion(nil, graphError)
+                return
+            }
+            do {
+                // Deserialize response as events collection
+                let mailsCollection = try MSCollection(data: mailsData)
+                var mailsArray: [MSGraphMessage] = []
+
+                mailsCollection.value.forEach({
+                    (rawEvent: Any) in
+                    // Convert JSON to a dictionary
+                    guard let mailsDict = rawEvent as? [String: Any] else {
+                        return
+                    }
+
+                    // Deserialize event from the dictionary
+                    let mail = MSGraphMessage(dictionary: mailsDict)!
+                    mailsArray.append(mail)
+                })
+
+                // Return the array
+                completion(mailsArray, nil)
+            } catch {
+                completion(nil, error)
+            }
+        })
+
+        // Execute the request
+        mailsDataTask?.execute()
+        
+    }
+    
     public func createEvent(subject: String,
                             start: Date,
                             end: Date,

@@ -90,6 +90,49 @@
             </objects>
             <point key="canvasLocation" x="623.1884057971015" y="104.46428571428571"/>
         </scene>
+        <!--Flagged mails-->
+        <scene sceneID="shN-Qc-1QA">
+            <objects>
+                <viewController id="C4v-iN-43b" customClass="MailsViewController" customModule="MS_Graph" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="FEB-OO-tp1">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ydG-JJ-fPH">
+                                <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="ITl-ej-qcl"/>
+                                </constraints>
+                                <items>
+                                    <navigationItem title="Title" id="f0S-Bx-eNv"/>
+                                </items>
+                            </navigationBar>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7Rt-kn-L49">
+                                <rect key="frame" x="0.0" y="88" width="414" height="725"/>
+                                <connections>
+                                    <segue destination="eRC-qG-Ngg" kind="embed" id="Sat-k6-Qcy"/>
+                                </connections>
+                            </containerView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="YjR-ZO-V89"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="ydG-JJ-fPH" firstAttribute="top" secondItem="YjR-ZO-V89" secondAttribute="top" id="0P8-sl-zgs"/>
+                            <constraint firstItem="YjR-ZO-V89" firstAttribute="bottom" secondItem="7Rt-kn-L49" secondAttribute="bottom" id="3J5-22-z9N"/>
+                            <constraint firstItem="7Rt-kn-L49" firstAttribute="top" secondItem="ydG-JJ-fPH" secondAttribute="bottom" id="7fW-h8-l1p"/>
+                            <constraint firstItem="YjR-ZO-V89" firstAttribute="trailing" secondItem="7Rt-kn-L49" secondAttribute="trailing" id="Lne-Pf-Z66"/>
+                            <constraint firstItem="ydG-JJ-fPH" firstAttribute="leading" secondItem="YjR-ZO-V89" secondAttribute="leading" id="eKs-wK-8M9"/>
+                            <constraint firstItem="7Rt-kn-L49" firstAttribute="leading" secondItem="YjR-ZO-V89" secondAttribute="leading" id="hpS-ik-g8m"/>
+                            <constraint firstItem="ydG-JJ-fPH" firstAttribute="trailing" secondItem="YjR-ZO-V89" secondAttribute="trailing" id="oVA-Zt-6b6"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Flagged mails" id="KNN-d6-kXr"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0ea-1I-qxL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="647.82608695652175" y="843.75"/>
+        </scene>
         <!--Me-->
         <scene sceneID="Bs4-gj-YSv">
             <objects>
@@ -162,6 +205,7 @@
                     <connections>
                         <segue destination="heW-1H-cE4" kind="relationship" relationship="viewControllers" id="6jx-e8-YF6"/>
                         <segue destination="aIb-Dk-ocg" kind="relationship" relationship="viewControllers" id="aca-BG-KqH"/>
+                        <segue destination="C4v-iN-43b" kind="relationship" relationship="viewControllers" id="DBT-Kj-w3p"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zbn-zz-sDH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -178,14 +222,14 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="EventCell" id="eWn-MM-L1E" customClass="CalendarTableViewCell" customModule="MS_Graph" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="28" width="414" height="73"/>
+                                <rect key="frame" x="0.0" y="28" width="414" height="73.5"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="eWn-MM-L1E" id="ad5-V9-I8k">
-                                    <rect key="frame" x="0.0" y="0.0" width="414" height="73"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="73.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jbH-NP-XhL">
-                                            <rect key="frame" x="20" y="47" width="374" height="15"/>
+                                            <rect key="frame" x="20" y="47.5" width="374" height="15"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="15" id="Nwm-so-Znw"/>
                                             </constraints>
@@ -194,13 +238,13 @@
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="weG-b2-h8W">
-                                            <rect key="frame" x="20" y="11" width="374" height="21"/>
+                                            <rect key="frame" x="20" y="11" width="374" height="21.5"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f4A-b0-7pp">
-                                            <rect key="frame" x="20" y="32" width="374" height="15"/>
+                                            <rect key="frame" x="20" y="32.5" width="374" height="15"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="15" id="Ldj-XU-wpt"/>
                                             </constraints>
@@ -365,6 +409,46 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cBf-w6-tOu" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2694.202898550725" y="117.85714285714285"/>
+        </scene>
+        <!--Mails Table View Controller-->
+        <scene sceneID="GOD-uW-sG5">
+            <objects>
+                <viewController id="eRC-qG-Ngg" customClass="MailsTableViewController" customModule="MS_Graph" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="5Lz-BY-Mpt">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="725"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="messageCell" textLabel="dV4-D0-o3h" detailTextLabel="JMY-pE-2bq" style="IBUITableViewCellStyleSubtitle" id="gr2-Dq-MBA">
+                                <rect key="frame" x="0.0" y="28" width="414" height="55.5"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="gr2-Dq-MBA" id="kbK-iH-I3q">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="55.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="dV4-D0-o3h">
+                                            <rect key="frame" x="20" y="10" width="33" height="20.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Subtitle" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="JMY-pE-2bq">
+                                            <rect key="frame" x="20" y="31.5" width="44" height="14.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                    </tableView>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cCk-ko-lel" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1528" y="844"/>
         </scene>
     </scenes>
     <resources>
